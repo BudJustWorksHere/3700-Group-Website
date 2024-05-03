@@ -7,6 +7,27 @@
 
 body {
   font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://imgs.search.brave.com/Ax_ogLLgRAm6vvpofrjolJKJPUVn55eESgVr80rQNQ0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL3Jlc3RhdXJh/bnQtcG5nLWhkLS0x/OTIwLnBuZw');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.post {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
 a {
@@ -55,6 +76,7 @@ li {
   transition: 0.3s ease;
 }
 
+/* Footer */
 footer {
   position: fixed;
   left: 0;

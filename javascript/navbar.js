@@ -1,12 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   // Get the current directory path
-  var currentPath = window.location.pathname;
-  
-  // Navigate to the parent directory
-  var parentPath = currentPath.split('/').slice(0, -2).join('/'); // Go up two levels
-  
-  // Construct the path to navbar.html
-  var navbarPath = parentPath + '/javascript/navbar.html';
+  var navbarPath = '/~apena1/3700-Website-Group-8/javascript/navbar.html';
 
   fetch(navbarPath)
     .then(response => response.text())

@@ -1,10 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Get the current directory path
-  var navbarPath = '/~apena1/3700-Website-Group-8/javascript/navbar.html';
+  // URL of the HTML document to fetch
+  const htmlDocUrl = 'navbar.html';
 
-  fetch(navbarPath)
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('navbarPlaceholder').innerHTML = data;
-    });
+  // Fetch the HTML document
+  fetch(htmlDocUrl)
+      .then(response => response.text())
+      .then(data => {
+          // Get the container where you want to embed the HTML
+          const embedContainer = document.getElementById('navbarPlaceholder');
+          // Insert the fetched HTML into the container
+          embedContainer.innerHTML = data;
+      })
+      .catch(error => {
+          console.error('Error fetching HTML document:', error);
+      });
 });

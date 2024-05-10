@@ -38,42 +38,14 @@ li {
   list-style: none;
 }
 
-/* NAVBAR STYLING */
-.navbar {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
+/* UI Color */
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+footer, .navbar, .navbar .dropdown-menu {
   background-color: #333;
-  color: #fff;
 }
 
-.nav-links a {
-  display: block;
-  padding: 15px;
-  color: #fff;
-}
-
-/* NAVBAR MENU */
-.menu {
-  display: flex;
-  gap: 1em;
-  font-size: 18px;
-}
-
-.menu li {
-  float: left;
-  padding: 5px 14px;
-}
-
-.menu li:hover {
-  background-color: #1b1b1b;
-  border-radius: 5px;
-  transition: 0.3s ease;
+.navbar .dropdown-menu a:hover {
+  background-color: rgb(224, 224, 224, 0.1);
 }
 
 /* Footer */
@@ -82,7 +54,6 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #333;
   color: #fff;
   text-align: center;
   padding: 20px 0; 

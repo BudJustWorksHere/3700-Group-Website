@@ -1,4 +1,4 @@
-/* DEAFULT */
+/* DEFAULT STYLES */
 * {
   margin: 0;
   padding: 0;
@@ -15,12 +15,21 @@ body {
   background-attachment: fixed;
 }
 
+a {
+  text-decoration: none !important;
+}
+
+li {
+  list-style: none;
+}
+/* LAYOUT CONTAINERS */
 .container {
   max-width: 800px;
   margin: 20px auto;
   padding: 0 20px;
 }
 
+/* POST STYLES */
 .post {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 20px;
@@ -30,35 +39,14 @@ body {
   text-align: left;
 }
 
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-/* UI Color */
-
-footer, .navbar, .navbar .dropdown-menu {
-  background-color: #333;
-}
-
-.navbar .dropdown-menu a:hover {
-  background-color: rgb(224, 224, 224, 0.1);
-}
-
-/* Footer */
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: #fff;
+.post h1 {
   text-align: center;
-  padding: 20px 0; 
+  font-size: 50px;
+  background-color: #333;
+  color: whitesmoke;
 }
 
+/* ARTICLE STYLES */
 article {
   max-width: 800px;
   margin: 20px auto;
@@ -71,17 +59,8 @@ article {
 
 article p {
   padding: 0 20px;
-  line-height: 1.5; /* Adjust line height for better readability */
+  line-height: 1.5;
   color: #555; 
-}
-
-section {
-  padding: 20px;
-  border-bottom: 1px solid #747272; /* Added border bottom to separate sections */
-}
-
-section:last-child {
-  border-bottom: none; /* Remove border bottom from the last section */
 }
 
 article h1,
@@ -89,22 +68,26 @@ article h2 {
   padding: 20px;
 }
 
-.post h1 {
-  text-align: center;
-  font-size: 50px;
-  background-color: #333;
-  color: whitesmoke;
-}
-
 article h3 {
   display: inline-block;
-  background-color: #333; /* Background color for h3 */
-  color: #fff; /* Text color for h3 */
-  padding: 10px; /* Padding for h3 */
-  border-radius: 5px; /* Border radius for h3 */
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
   text-align: center;
 }
 
+/* SECTION STYLES */
+section {
+  padding: 20px;
+  border-bottom: 1px solid #747272;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+/* GALLERY STYLES */
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -115,9 +98,8 @@ article h3 {
   position: relative;
   overflow: hidden;
   border-radius: 5px;
-  border: 10px solid lightgreen;
+  border: 10px solid red;
 }
-
 
 .gallery-item img {
   width: 100%;
@@ -125,25 +107,12 @@ article h3 {
   object-fit: cover;
 }
 
-#section2-home{
-  background-color: white;
-  min-height: 500px;
-}
-
-#section1-home {
-  background-image: url('https://imgs.search.brave.com/AAi8ckKfc72wvYDyl-1UGpqDnBP9-hq98fdD2Xnatwg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbHBhcGVyc2Fm/YXJpLmNvbS82NS80/OS9uWjdXVHQuanBn');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 1000px;
-  
-}
-
+/* BUTTON STYLES */
 .pressable-button {
   display: inline-block;
   padding: 10px;
-  background-color: lightgreen; /* Set button background color */
-  color: white;
+  background-color: rgba(245, 245, 245, 0.8);
+  color: red;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -154,8 +123,89 @@ article h3 {
   left: 50%;
   position: absolute;
 }
-
 .pressable-button:hover {
-  background-color: #0056b3; /* Change background color on hover */
+  background-color: whitesmoke;
+}
+
+/* SECTION HOME */
+#section2-home {
+  background: rgba(0, 0, 0, 0.5);
+  min-height: 500px;
+}
+
+#section1-home {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#section1-home .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+#section1-home .container {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+#section1-home p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.highlight{
+  color: red; 
+  text-decoration: none;
+  text-shadow: 
+  -1px -1px 0 black,  
+  1px -1px 0 black,
+  -1px 1px 0 black,
+  1px 1px 0 black;
+}
+.highlight:hover{
+  color: rgba(255, 0, 0, 0.5);
+}
+
+/* NAVBAR STYLES */
+.navbar, .navbar .dropdown-menu {
+  background-color: #333;
+}
+
+.navbar .dropdown-menu a:hover {
+  background-color: rgba(224, 224, 224, 0.1);
+}
+
+/* FOOTER STYLES */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* UI COLOR */
+footer, .navbar, .navbar .dropdown-menu {
+  background-color: #333;
+}
+
+.navbar .dropdown-menu a:hover {
+  background-color: rgb(224, 224, 224, 0.1);
 }
 

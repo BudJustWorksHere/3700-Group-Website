@@ -77,6 +77,31 @@ article h3 {
   text-align: center;
 }
 
+.restaurant {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.restaurant .restaurant-img{
+  width: 200px;
+  height: 200px;
+  height: auto;
+  margin-right: 20px; 
+}
+
+.restaurant .content {
+  flex: 1; /* Allow the content to take remaining space */
+}
+
+.restaurant h3 {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
 /* SECTION STYLES */
 section {
   padding: 20px;
@@ -90,9 +115,8 @@ section:last-child {
 /* GALLERY STYLES */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 40px;
-  padding-bottom: 50px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
 }
 
 .gallery-item {
@@ -132,8 +156,6 @@ section:last-child {
 #section2-home {
   background: rgba(0, 0, 0, 0.5);
   min-height: 500px;
-  border-bottom: none;
-  padding: 150px;
 }
 
 #section1-home {
@@ -141,7 +163,7 @@ section:last-child {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 700px;
+  height: 1000px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -213,97 +235,3 @@ footer, .navbar, .navbar .dropdown-menu {
   background-color: rgb(224, 224, 224, 0.1);
 }
 
-/* HOME */
-#section3-home {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 50px 0;
-  text-align: center;
-  padding-bottom: 100px;
-}
-
-#section3-home .container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-#section3-home h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-#section3-home p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.newsletter-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.newsletter-form input[type="email"] {
-  padding: 10px;
-  width: 300px;
-  border: 1px solid red;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-
-.newsletter-form button {
-  padding: 10px 20px;
-  background-color: red;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-#section3-home .post {
-  background-color: rgba(255, 255, 255, 0.737); /* Post background color */
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/*SECTION-4*/
-#section4-home {
-  background: rgba(0, 0, 0, 0.5);
-  padding-bottom: 100px;
-}
-
-#section4-home .container {
-  position: relative;
-  color: white;
-  text-align: center;
-  font-family: 'Playfair Display', serif;
-}
-
-#section4-home .preview-content {
-  display: flex;
-  align-items: center;
-}
-
-#section4-home .text {
-  flex: 1;
-  padding-right: 20px;
-  margin: 40px;
-}
-
-#section4-home .text h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-#section4-home .text p {
-  font-size: 40px;
-}
-
-#section4-home .image img {
-  width: 100%;
-  border-radius: 5px;
-  border: 10px solid red;
-}
-
-#section4-home .image img:hover {
-  border: 10px solid rgb(255, 77, 0);
-}

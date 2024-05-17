@@ -26,6 +26,7 @@ body {
 
 a {
   text-decoration: none !important;
+  color:white !important;
 }
 
 li {
@@ -101,6 +102,7 @@ article h3 {
   padding-bottom: 20px;
 }
 
+/*RESTRAUNT STYLES*/
 .restaurant {
   display: flex;
   align-items: center;
@@ -125,6 +127,40 @@ article h3 {
   border-radius: 5px;
   text-align: center;
 }
+/*CHEAP-STYLES*/
+.cheap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.cheap-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;;
+}
+
+.cheap h3{
+ background-color: red; 
+}
+.cheap h3:hover{
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.full-text {
+  display: none;
+}
+
+.read-more-btn {
+  color: black;
+  border: none;
+  padding: 2px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 
 /* SECTION STYLES */
 section {
@@ -139,8 +175,9 @@ section:last-child {
 /* GALLERY STYLES */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  padding-bottom: 50px;
 }
 
 .gallery-item {
@@ -178,8 +215,9 @@ section:last-child {
 
 /* SECTION HOME */
 #section2-home {
-  background: rgba(0, 0, 0, 0.5);
   min-height: 500px;
+  border-bottom: none;
+  padding: 150px;
 }
 
 #section1-home {
@@ -200,7 +238,6 @@ section:last-child {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -260,11 +297,8 @@ footer, .navbar, .navbar .dropdown-menu {
   background-color: rgb(224, 224, 224, 0.1);
 }
 
-<<<<<<< HEAD
-=======
 /* HOME */
 #section3-home {
-  background: rgba(0, 0, 0, 0.5);
   padding: 50px 0;
   text-align: center;
   padding-bottom: 100px;
@@ -316,7 +350,6 @@ footer, .navbar, .navbar .dropdown-menu {
 
 /*SECTION-4*/
 #section4-home {
-  background: rgba(0, 0, 0, 0.5);
   padding-bottom: 100px;
 }
 
@@ -357,4 +390,3 @@ footer, .navbar, .navbar .dropdown-menu {
 #section4-home .image img:hover {
   border: 10px solid rgb(255, 77, 0);
 }
->>>>>>> b39cd5bed3527467fce9f93413b08541ee846b08

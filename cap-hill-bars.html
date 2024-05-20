@@ -23,8 +23,7 @@
                     <div class="article-date">Published May 16th, 2024</div>
                 </div>
 
-                <p class="post-intro">
-                    &#160 &#160 &#160 
+                <p>
                     Experiencing Capitol Hill nightlife is like fiddling with a faulty remote control car: you never know 
                     which way it’s going to go, but it’s a really eventful time regardless. Plan any big night out that involves 
                     bar-hopping, and chances are you’ll decide on Capitol Hill—and with good reason. There’s a quality mix of 
@@ -32,23 +31,92 @@
                     “Down the hatch, people!” That’s why we love it. Here are our favorite places to drink on the Hill.
                 </p>
 
-                <section>
-                    <h3>Unicorn</h3>
+                <section id= "Unicorn" class="restaurant">
+                    <img class="restaurant-img" src="https://images.squarespace-cdn.com/content/v1/5d55e4c406387900012f9afa/1582836932455-PVWNYK69WI7J98EB17E0/IMG_9832-HDR.jpg" alt="Unicorn">
+                    <div>
+                    <h3><a href="https://www.yelp.com/biz/unicorn-seattle" target="_blank">Unicorn</a></h3>
                     <p>
-                        &#160 &#160 &#160
-                        Unicorn is one of Cap Hill's staple bars. This carnival themed establishment gives patron's many outlets
-                        including: food, coctails, arcade games, and scheduled live events. Whe you wallk
-                    </p>
+                        <span class="short-text">
+                            Unicorn is one of Cap Hill's staple bars. This carnival themed establishment gives patron's many outlets
+                            including: food, coctails, arcade games, and scheduled live events
+                        </span>
+                        <span class="full-text">
+                            Unicorn is one of Cap Hill's staple bars. This carnival themed establishment gives patron's many outlets
+                            including: food, coctails, arcade games, and scheduled live events. From  an assortment of funny named drinks
+                            like "Withcy Titty" and "Unicorn Jizz", all loaded with  large amounts of high fructose corn syrup. 
+                            Great for bar hopping or cheap jello shots, Unicorn is a superior bar for college students looking for
+                            a good time at a reeasonable price.
+                        </span>
+                        <button class="read-more-btn">Read more</button>
+                      </p>
+                    </div>
+                </section>
+                
+                <section id= "Rhein Haus" class="restaurant">
+                    <img class="restaurant-img" src="https://seattlerefined.com/resources/media/e92b27b7-d6ba-4d21-8d14-7e06f6b729db-VonTrapps_RheinHaus.jpg?1446686802201" alt="Rhein Haus">
+                    <div>
+                    <h3><a href="https://www.yelp.com/biz/rhein-haus-seattle-seattle-3" target="_blank">Rhein Haus Seattle</a></h3>
+                    <p>
+                        <span class="short-text">
+                            Rhein Haus is located in a huge space that’s packed to the brim with long wooden tables, bratwurst, and
+                            college students. If you can get past the fact that the
+                        </span>
+                        <span class="full-text">
+                            Rhein Haus is located in a huge space that’s packed to the brim with long wooden tables, bratwurst, and
+                            college students. If you can get past the fact that the line to the bathroom may take longer than a sitcom
+                            episode, and the fact that half the establishment shifts into a night club past 10pm, swing by and slurp liters of German lager
+                            served in glass boots. You can also eat things like schnitzel sliders and comically large pretzels with tasty
+                            beer cheese, all while watching some sports or paying 10 dollars an hour to play bocce extremely competitively
+                            until your friends hate each other.
+                        </span>
+                        <button class="read-more-btn">Read more</button>
+                      </p>
+                    </div>
                 </section>
 
+                <section id= "Life On Mars" class="restaurant">
+                    <img class="restaurant-img" src="https://s3-media0.fl.yelpcdn.com/bphoto/dKElXtlO1arOs9fofdGRww/348s.jpg" alt="Life On Mars">
+                    <div>
+                    <h3><a href="https://www.yelp.com/biz/life-on-mars-seattle" target="_blank">Life On Mars</a></h3>
+                    <p>
+                        <span class="short-text">
+                            Right off of Pike in a more calm area of Cap Hill, Life On Mars is a beautiful bar space containing a tasteful
+                            decor of vinyls. This bar tends to have a calmer vibe then the
+                        </span>
+                        <span class="full-text">
+                            Right off of Pike in a more calm area of Cap Hill, Life On Mars is a beautiful bar space containing a tasteful
+                            decor of vinyls. This bar tends to have a calmer vibe then the average cap hill bar, making it a great place to
+                            go on a date or talk with friends. Even though the place is a bit pricey compared to other places on this list,
+                            it makes up for it with ambiance and its large menu of vegan options for those less meat inclined.
+                        </span>
+                        <button class="read-more-btn">Read more</button>
+                      </p>
+                    </div>
+                </section>
             </article>
         </div>
     </div>
 
+    <section id="section3-home">
+        <div class="container">
+          <div class="post">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated with the latest restaurant recommendations, food events, and special offers by subscribing to our newsletter.</p>
+            <!-- Newsletter signup form -->
+            <form id="newsletter-form" class="newsletter-form">
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+              <button type="submit">Subscribe</button>
+            </form>
+            <p id="subscription-status"></p>
+          </div>
+        </div>
+    </section>
+    
     <footer id="footer"></footer>
     <!--- Scripts --->
     <script src="javascript/navbar.js"></script>
     <script src="javascript/footer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="javascript/article-text.js"></script>
 </body>
 </html>

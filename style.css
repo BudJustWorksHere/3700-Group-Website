@@ -89,7 +89,7 @@ article h3 {
   display: inline-block;
   background-color: #333;
   color: #fff;
-  padding: 8px 20px;
+  padding: 10px;
   border-radius: 5px;
   text-align: center;
 }
@@ -98,6 +98,7 @@ article h3 {
   font-size: 12px;
   text-align: center;
 }
+
 .article-doc {
   padding-bottom: 20px;
 }
@@ -112,21 +113,9 @@ article h3 {
 .restaurant .restaurant-img{
   width: 200px;
   height: 200px;
-  height: auto;
   margin-right: 20px; 
 }
 
-.restaurant .content {
-  flex: 1; 
-}
-
-.restaurant h3 {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-}
 /*CHEAP-STYLES*/
 .cheap {
   display: flex;

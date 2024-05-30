@@ -83,6 +83,7 @@ article p {
 article h1,
 article h2 {
   padding: 20px;
+  font-family: 'Playfair Display', serif;
 }
 
 article h3 {

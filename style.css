@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url('https://t3.ftcdn.net/jpg/01/16/85/14/360_F_116851449_An8K6CSFSldb2HemKw6dBzvXH3JOTRwT.jpg');
-  background-size: auto; /* or try 'auto' */
+  background-size: contain;
   background-position: center;
   background-attachment: fixed;
 }

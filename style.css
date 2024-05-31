@@ -393,7 +393,7 @@ footer, .navbar, .navbar .dropdown-menu {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 110%;
+  top: 127%;
   width: auto;
   padding: 16px;
   margin-left: -70px;

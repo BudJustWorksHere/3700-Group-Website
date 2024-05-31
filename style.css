@@ -260,6 +260,14 @@ section:last-child {
   width: auto;
 }
 
+.navbar .nav-item{
+  padding-right: 10px;
+}
+
+.navbar #lastItem {
+  padding-right: 40px;
+}
+
 .navbar, .navbar .dropdown-menu {
   background-color: #333;
 }

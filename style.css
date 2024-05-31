@@ -236,6 +236,16 @@ section:last-child {
 }
 
 /* NAVBAR STYLES */
+.navbar a {
+  padding: 16px;
+  font-size: 21px;
+}
+
+.navbar img {
+  height: 30px;
+  width: auto;
+}
+
 .navbar, .navbar .dropdown-menu {
   background-color: #333;
 }

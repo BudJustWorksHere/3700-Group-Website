@@ -237,13 +237,12 @@ section:last-child {
 
 /* NAVBAR STYLES */
 .navbar a {
-  padding: 16px;
-  font-size: 21px;
+  padding: 10px;
+  font-size: 24px;
 }
 
 .navbar img {
-  height: 30px;
-  width: auto;
+  height: auto;
 }
 
 .navbar .nav-item{

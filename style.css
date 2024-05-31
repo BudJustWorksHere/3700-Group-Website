@@ -357,3 +357,44 @@ footer, .navbar, .navbar .dropdown-menu {
 #section4-home .image img:hover {
   border: 10px solid rgb(255, 77, 0);
 }
+
+/* FORM STYLES ADJUSTMENT */
+.contact-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.contact-form .form-group label {
+  color: #333;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus {
+  border-color: #007BFF;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #FFA500;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #FF8C00;
+}

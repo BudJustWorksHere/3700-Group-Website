@@ -152,7 +152,7 @@ section:last-child {
   position: relative;
   overflow: hidden;
   border-radius: 5px;
-  border: 10px solid red;
+  border: 10px solid rgb(95, 128, 172);
 }
 
 .gallery-item img {
@@ -166,7 +166,7 @@ section:last-child {
   display: inline-block;
   padding: 10px;
   background-color: rgba(245, 245, 245, 0.8);
-  color: red;
+  color: rgb(49, 127, 184);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -223,7 +223,7 @@ section:last-child {
 }
 
 .highlight{
-  color: red; 
+  color: rgb(49, 127, 184); 
   text-decoration: none;
   text-shadow: 
   -1px -1px 0 black,  
@@ -232,7 +232,7 @@ section:last-child {
   1px 1px 0 black;
 }
 .highlight:hover{
-  color: rgba(255, 0, 0, 0.5);
+  color: white;
 }
 
 /* NAVBAR STYLES */
@@ -246,6 +246,7 @@ section:last-child {
 
 /* FOOTER STYLES */
 footer {
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -295,21 +296,21 @@ footer, .navbar, .navbar .dropdown-menu {
 .newsletter-form input[type="email"] {
   padding: 10px;
   width: 300px;
-  border: 1px solid red;
+  border: 1px solid rgb(95, 128, 172);
   border-radius: 5px;
   margin-right: 10px;
 }
 
 .newsletter-form button {
   padding: 10px 20px;
-  background-color: red;
+  background-color: rgb(95, 128, 172);
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 #section3-home .post {
-  background-color: rgba(255, 255, 255, 0.737); /* Post background color */
+  background-color: rgba(255, 255, 255, 0.737);
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -318,6 +319,7 @@ footer, .navbar, .navbar .dropdown-menu {
 /*SECTION-4*/
 #section4-home {
   padding-bottom: 100px;
+  border-bottom: none;
 }
 
 #section4-home .container {
@@ -339,7 +341,7 @@ footer, .navbar, .navbar .dropdown-menu {
 }
 
 #section4-home .text h2 {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
@@ -350,10 +352,45 @@ footer, .navbar, .navbar .dropdown-menu {
 #section4-home .image img {
   width: 100%;
   border-radius: 5px;
-  border: 10px solid red;
+  border: 10px solid white;
   max-width:800px;
 }
 
+#section4-home .image img:hover {
+  border: 10px solid white;
+}
+
+
+/* Style the buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 110%;
+  width: auto;
+  padding: 16px;
+  margin-left: -70px;
+  margin-right: 70px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.slideshow-container{
+  border-bottom: none;
+  padding-bottom: 100px;
+}
 #section4-home .image img:hover {
   border: 10px solid rgb(255, 77, 0);
 }

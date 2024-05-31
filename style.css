@@ -258,10 +258,6 @@ section:last-child {
   font-size: 24px;
 }
 
-.navbar .navbar-brand{
-  position: absolute;
-}
-
 .navbar img {
   height: auto;
 }
